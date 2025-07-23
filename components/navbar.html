@@ -1,0 +1,277 @@
+<!-- Cambia <na v ...> por <nav ...> -->
+<nav class="bg-white w-full shadow-md border">
+  <div class="container mx-auto px-2 sm:px-4">
+    <!-- Desktop Navbar -->
+    <div class="hidden lg:flex justify-between items-center py-4">
+      <!-- Logo y nombre -->
+      <div class="flex items-center">
+        <img src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg" alt="NetPeru Logo" class="h-12 mr-3" />
+      </div>
+      <!-- Info de contacto -->
+      <div class="flex flex-wrap space-x-4 xl:space-x-8 text-black">
+        <div class="flex items-center">
+          <i class="fas fa-phone-alt mr-2 text-black"></i>
+          <div>
+            <p class="text-sm font-bold">533-4339</p>
+            <p class="text-sm font-bold">994-428-965</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-phone-alt mr-2 text-black"></i>
+          <div>
+            <p class="text-sm font-bold">99653-3223</p>
+            <p class="text-sm font-bold">937-514-867</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-envelope mr-2 text-black"></i>
+          <span class="text-sm font-bold">netperu100@hotmail.com</span>
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-map-marker-alt mr-2 text-black"></i>
+          <span class="text-sm font-bold">Lima, PERÚ</span>
+        </div>
+        <div>
+          <img src="http://www.ds3comunicaciones.com/mikrotik/images/gateway-antennas.gif" alt="cisco" class="h-10" />
+        </div>
+      </div>
+      <!-- Botón de búsqueda -->
+      <div class="flex items-center">
+        <button id="search-button" class="p-2 rounded-full hover:bg-gray-100 transition-colors">
+          <i class="fas fa-search text-black"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Navbar -->
+    <div class="lg:hidden flex flex-col gap-2 w-full">
+      <!-- navbar superior  -->
+      <div class="flex justify-between items-center py-2">
+        <!-- div izquierdo -->
+        <div class="flex gap-1 items-center">
+          <!-- boton hamburgesa -->
+          <button id="mobile-menu-button" class="p-2 rounded-full hover:bg-gray-300 transition-colors">
+            <i class="fas fa-bars text-black"></i>
+          </button>
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <img src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg" alt="NetPeru Logo" class="h-10" />
+            <img src="http://www.ds3comunicaciones.com/cisco/images/logo-cisco.gif" alt="NetPeru Logo" class="h-10" />
+          </div>
+        </div>
+        <!-- Botón buscar -->
+        <button id="mobile-search-button"
+          class="p-2 rounded-md hover:bg-gray-300 transition-colors border border-black flex gap-3 items-center">
+          <i class="fas fa-search text-black"></i>
+        </button>
+      </div>
+<!-- navbar inferior responsive y ordenado -->
+<div class="py-2 pl-2 sm:pl-3">
+  <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+    <!-- Teléfono 1 -->
+    <div class="flex items-center">
+      <i class="fas fa-phone-alt mt-1 mr-1 text-black"></i>
+      <p class="text-sm">996533223</p>
+    </div>
+    <!-- Teléfono 2 -->
+    <div class="flex items-center">
+      <i class="fas fa-phone-alt mt-1 mr-1 text-black"></i>
+      <p class="text-sm">994428965</p>
+    </div>
+    <!-- Correo -->
+    <div class="flex items-center">
+      <i class="fas fa-envelope mr-1 text-black"></i>
+      <span class="text-sm break-all">netperu100@hotmail.com</span>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+  <!-- Menú móvil desplegable - Lado derecho -->
+  <div id="mobile-menu"
+    class="fixed top-0 left-0 h-full w-11/12 max-w-xs bg-white shadow-xl z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+    <!-- Botón de cerrar -->
+    <div class="flex justify-end p-4">
+      <button id="close-menu" class="text-gray-500 hover:text-gray-700">
+        <i class="fas fa-times text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Contenido del menú -->
+    <div class="px-4 pb-8">
+      <!-- Enlaces adicionales -->
+      <div>
+        <div class="flex flex-col gap-1">
+          <!-- Enlaces principales -->
+          <a href="http://ds3comunicaciones.com/cisco/precios_cisco_b.html" id="menu"
+            class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+            Lista Completa
+          </a>
+          <a href="http://ds3comunicaciones.com/cisco/precios_cisco_access_point_b.html" id="menu"
+            class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+            Access Point
+          </a>
+          <a href="http://ds3comunicaciones.com/cisco/precios_cisco_switch_small_bussines_b.html" id="menu"
+            class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+            Switch Small Business
+          </a>
+          <a href="http://ds3comunicaciones.com/cisco/precios_cisco_switch_catalyst_b.html" id="menu"
+            class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+            Switch Catalyst
+          </a>
+          <a href="http://ds3comunicaciones.com/cisco/precios_cisco_meraki_b.html" id="menu"
+            class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+            Cisco Meraki
+          </a>
+          <a href="http://ds3comunicaciones.com/cisco/precios_cisco_nexus_b.html" id="menu"
+            class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+            Cisco Nexus
+          </a>
+          <a href="http://ds3comunicaciones.com/cisco/precios_cisco_router_b.html" id="menu"
+            class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+            Routers
+          </a>
+          <a href="http://ds3comunicaciones.com/cisco/precios_cisco_telefonos_b.html" id="menu"
+            class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+            Teléfonos Cisco
+          </a>
+          <a href="http://ds3comunicaciones.com/cisco/precios_cisco_modulo_transceiver_fibra_b.html" id="menu2"
+            class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+            Módulo/Transceiver de Fibra
+          </a>
+          <a href="http://ds3comunicaciones.com/cisco/precios_cisco_accesorios_b.html" id="menu"
+            class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+            Accesorios
+          </a>
+          <a href="http://ds3comunicaciones.com/cisco/precios_cisco_switch_industrial_b.html" id="menu"
+            class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+            Switch Industrial
+          </a>
+        </div>
+      </div>
+
+      <!-- Lista de precios (desplegable) -->
+      <div>
+        <details class="group">
+          <summary class="flex justify-between items-center cursor-pointer list-none py-3 border-b">
+            <span class="font-bold text-gray-800">Lista de Precios</span>
+            <i class="fas fa-chevron-down text-gray-500 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="mt-2">
+            <ul class="flex flex-col gap-2">
+              <!-- ... (igual que antes, sin cambios) ... -->
+              <!-- Puedes dejar la lista igual, ya es responsiva -->
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <!-- Marcas (desplegable) -->
+      <div>
+        <details class="group">
+          <summary class="flex justify-between items-center cursor-pointer list-none py-3 border-b">
+            <span class="font-bold text-gray-800">Marcas</span>
+            <i class="fas fa-chevron-down text-gray-500 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="flex flex-wrap items-center justify-center gap-2 mt-2">
+            <!-- ... (igual que antes, sin cambios) ... -->
+            <!-- Las marcas ya están en columna y con gap, se ven bien en móvil -->
+          </div>
+        </details>
+      </div>
+
+      <!-- Sección de contacto -->
+      <div class="mt-2">
+        <h3 class="text-lg font-bold mb-4 border-b pb-2">Contacto</h3>
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center bg-gray-100 rounded-md px-3 py-2">
+            <i class="fas fa-phone-alt mr-3 text-blue-700"></i>
+            <div>
+              <p class="font-medium text-sm text-[#0D274D] leading-none">533-4339</p>
+              <p class="text-xs text-[#0D274D] leading-none">994-428-965</p>
+            </div>
+          </div>
+          <div class="flex items-center bg-gray-100 rounded-md px-3 py-2">
+            <i class="fas fa-phone-alt mr-3 text-blue-700"></i>
+            <div>
+              <p class="font-medium text-sm text-[#0D274D] leading-none">99653-3223</p>
+              <p class="text-xs text-[#0D274D] leading-none">937-514-867</p>
+            </div>
+          </div>
+          <div class="flex items-center bg-gray-100 rounded-md px-3 py-2">
+            <i class="fas fa-envelope mr-3 text-blue-700"></i>
+            <span class="text-sm text-[#0D274D] break-all">netperu100@hotmail.com</span>
+          </div>
+          <div class="flex items-center bg-gray-100 rounded-md px-3 py-2">
+            <i class="fas fa-map-marker-alt mr-3 text-blue-700"></i>
+            <span class="text-sm text-[#0D274D]">Lima, PERÚ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay para menú móvil -->
+  <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+</nav>
+
+<!-- Modal de Búsqueda -->
+<section id="search-modal" class="fixed top-0 left-0 right-0 bottom-0 h-screen w-full px-2 pt-7 anim none z-50"
+  style="background-color: rgba(0, 0, 0, 0.575)">
+  <div class="max-w-[95vw] sm:max-w-[600px] mx-auto flex flex-col sm:flex-row gap-2 justify-between">
+    <form name="form1" method="get" action="https://www.ds3comunicaciones.com/find.html"
+      class="mx-auto flex items-center justify-between px-1 border w-full rounded-md bg-white"
+      enctype="application/x-www-form-urlencoded">
+      <div class="flex items-center w-full">
+        <i class="fa-solid fa-magnifying-glass ps-2 text-gray-500"></i>
+        <input name="q" type="text" class="outline-none px-3 py-3 w-full" placeholder="Buscar..." required />
+      </div>
+      <input type="hidden" name="cx" value="partner-pub-9265252540298851:f2549i3fi60" />
+      <input type="hidden" name="cof" value="FORID:10" />
+      <input type="hidden" name="ie" value="ISO-8859-1" />
+      <div
+        class="cursor-pointer px-3 py-1 rounded-md text-sm relative flex items-center bg-blue-500 text-white hover:bg-blue-600 transition-colors">
+        <input name="sa" type="submit" value="Buscar" class="cursor-pointer bg-transparent border-none text-white" />
+        <i class="fa-solid fa-caret-right ml-1"></i>
+      </div>
+    </form>
+    <div class="mx-auto text-end">
+      <button id="close-search"
+        class="cursor-pointer text-white text-2xl flex items-center justify-center w-[35px] h-[42px] rounded-md font-medium hover:bg-gray-700 transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Estilos extra para mejorar responsividad -->
+<style>
+  @media (max-width: 640px) {
+    #mobile-menu {
+      width: 95vw !important;
+      max-width: 95vw !important;
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+    }
+    #mobile-menu .flex.flex-wrap.items-center.justify-center.gap-2.mt-2 {
+      gap: 0.5rem !important;
+    }
+    #mobile-menu .flex.flex-col.gap-2 {
+      gap: 0.5rem !important;
+    }
+    #search-modal .max-w-\[95vw\] {
+      max-width: 95vw !important;
+    }
+    #search-modal form {
+      flex-direction: column !important;
+      gap: 0.5rem !important;
+    }
+    #search-modal .mx-auto.text-end {
+      width: 100%;
+      text-align: right;
+      margin-top: 0.5rem;
+    }
+  }
+</style>

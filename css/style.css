@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.scrollbar-hide {
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none; /* Para IE y Edge */
+  }
+  
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari y Opera */
+  }
+
+  /* Estilo para la miniatura activa */
+.miniatura-activa {
+  border: 1px solid #3b82f6 !important;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+/* Transición para la imagen principal */
+#img_main {
+  transition: opacity 0.3s ease;
+}
